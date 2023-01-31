@@ -1,0 +1,393 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	list-style: none
+
+@font-face
+	font-family: "Montserrat"
+	src: url("../fonts/Montserrat-Regular.ttf")
+	font-style: normal
+	font-weight: normal
+@font-face
+	font-family: "Montserrat-Bold"
+	src: url("../fonts/Montserrat-SemiBold.ttf")
+	font-style: normal
+	font-weight: bold
+$color-blue: #5290EA
+$color-orange: #f28b64
+$color-grey: #E2E2E2
+body
+	font-family: Montserrat
+
+.container
+	max-width: 1140px
+	margin: 0 auto
+
+.main-section
+	min-height: 800px
+	background: #E5E5E5
+	padding-top: 16px
+	overflow: hidden
+	position: relative
+
+	&__nav-container
+		display: flex
+		justify-content: space-between
+		align-items: center
+		height: 69px
+
+	&__logo
+		width: 134px
+
+	&__content-container
+		display: flex
+		position: relative
+
+	&__first-elipse
+		position: absolute
+		top: 152px
+		left: 915px
+
+.nav-menu
+	&__list
+		display: flex
+
+	&__item
+		margin-right: 65px
+		font-size: 18px
+
+		&:last-child
+			margin-right: 0
+
+.left-wraper
+	position: relative
+
+	img
+		z-index: 3
+		position: relative
+
+	&__rectangle-blue
+		width: 565.95px
+		height: 220px
+		background: $color-blue
+		border-radius: 100px
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+		transform: rotate(-64deg)
+		position: absolute
+		top: 150px
+		left: -50px
+		z-index: 1
+
+	&__rectangle-orange
+		position: absolute
+		width: 618.43px
+		height: 220px
+		left: -25px
+		top: 155px
+		background: $color-orange
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+		border-radius: 100px
+		transform: rotate(-50.81deg)
+		z-index: 2
+
+	&__rectangle-grey
+		position: absolute
+		width: 608.97px
+		height: 220px
+		left: 10px
+		top: 190px
+		background: $color-grey
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+		border-radius: 100px
+		transform: rotate(-36.15deg)
+
+.icons
+	display: flex
+
+	&:last-child
+		margin-right: 0
+
+	&__item
+		display: flex
+		width: 40px
+		height: 40px
+		border: 1px solid $color-blue
+		border-radius: 100px
+		justify-content: center
+		align-items: center
+		margin-right: 17px
+
+		&:last-child
+			margin-right: 0
+
+		i
+			font-size: 21px
+
+.right-wrapper
+	width: 372px
+	position: absolute
+	left: 692px
+	top: 160px
+
+	&__icons-box
+		padding-left: 10px
+
+	&__title
+		position: relative
+		z-index: 2
+
+	&__icon-btn
+		display: flex
+		align-items: center
+
+		img
+			margin-right: 12px
+
+	&__text
+		margin-bottom: 20px
+
+
+.titles
+	position: relative
+
+	&__title
+		font-family: Montserrat-Bold
+		font-size: 72px
+		font-weight: bold
+
+	&__hr
+		position: absolute
+		width: 65px
+		border: 0px
+		border-top: 3px solid black
+		top: 80px
+
+		&_big
+			width: 94px
+			top: 90px
+
+.buttons
+	display: flex
+
+	&__btn
+		border: 0
+		background-color: $color-orange
+		width: 200px
+		height: 60px
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+		border-radius: 100px
+		font-size: 18px
+		font-weight: 600
+		color: #FFFFFF
+		margin-right: 32px
+		transition-duration: 0.4s
+		z-index: 6
+
+		&:active
+			transform: scale(0.9)
+
+		&:hover
+			cursor: pointer
+
+	&__icon-btn
+		font-size: 16px
+
+		p:hover
+			text-decoration: underline
+			cursor: context-menu
+
+.elipse
+	display: flex
+	justify-content: center
+	align-items: center
+	border-radius: 100px
+	width: 194px
+	height: 194px
+	background: linear-gradient(143.92deg, rgba(237, 123, 80, 0.5) 14.85%, rgba(72, 138, 234, 0.5) 53.25%, rgba(44, 44, 44, 0.5) 85.74%)
+
+	&_big
+		width: 282px
+		height: 282px
+		border-radius: 150px
+		position: absolute
+		right: -120px
+		top: 600px
+	&_position
+		z-index: 2
+
+	&__subtract
+		background-color: #E5E5E5
+		width: 129.33px
+		height: 129.33px
+		border-radius: 100px
+
+		&_big
+			width: 188px
+			height: 188px
+
+		&_bg-white
+			background-color: #ffffff
+
+.main-course
+	min-height: 700px
+
+	&__info
+		position: relative
+
+	&__title
+		margin-bottom: 40px
+
+	&__advantages
+
+		margin-bottom: 56px
+
+	&__first-elipse
+		position: absolute
+		top: 329px
+		z-index: -1
+		left: -74px
+
+	&__second-elipse
+		position: absolute
+		top: 40px
+		z-index: -1
+		right: -54px
+
+.courses
+	display: flex
+	align-items: flex-end
+	justify-items: center
+	margin-right: 30px
+	transition-duration: 0.4s
+
+	&:last-child
+		margin-right: 0px
+
+	&:hover
+		transform: scale(1.05)
+
+.guitar
+	display: flex
+	margin-bottom: 20px
+
+	img
+		height: 335px
+		width: 195px
+
+	&__one
+		min-width: 360px
+		height: 360px
+		left: 150px
+		top: 958px
+		background: $color-grey
+		border-radius: 10px
+
+	&__two
+		min-width: 360px
+		height: 360px
+		left: 150px
+		top: 958px
+		background: $color-orange
+		border-radius: 10px
+
+	&__three
+		min-width: 360px
+		height: 360px
+		left: 150px
+		top: 958px
+		background: $color-blue
+		border-radius: 10px
+
+.text
+	transform: rotate(90deg)
+	text-align: center
+	position: relative
+	font-size: 30px
+	font-weight: 600
+
+	&__item-1
+		position: absolute
+		bottom: 20px
+		right: 80px
+
+	&__item-2
+		position: absolute
+		bottom: 20px
+		right: 15px
+
+	&__item-3
+		position: absolute
+		bottom: 20px
+		right: 77px
+
+.advantages
+	display: flex
+	justify-content: space-evenly
+	&__item
+		display: flex
+		white-space: nowrap
+		img
+			width: 80px
+			height: 80px
+			margin-right: 20px
+
+		&:last-child
+			margin-right: 0
+
+		h2
+			font-size: 38px
+			font-weight: bold
+
+		p
+			font-size: 18px
+
+.result-section
+	min-height: 640px
+	background-color: $color-grey
+	position: relative
+	overflow: hidden
+	&__info
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	&__left-wrapper
+		position: relative
+	&__left-title
+		z-index: 1
+	&__right-wrapper
+		margin-bottom: 20px
+	&__second-elipse
+		position: absolute
+		top: -92px
+		left: -55px
+	&__third-elipse
+		position: absolute
+		top: -20px
+		left: -167px
+
+	&__title
+		padding-left: 10px
+	&__text
+		max-width: 479px
+		min-height: 308px
+		font-size: 18px
+		margin-bottom: 30px
+	&__figura
+		position: absolute
+		top: -121px
+		right: -116px
+
+.footer-section
+	&__title
+		margin-bottom: 20px
+	position: relative
+	img
+		position: absolute
+		left: -137px
+		bottom: 0px
+	display: flex
+	justify-content: flex-end
+
+
